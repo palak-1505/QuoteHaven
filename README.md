@@ -1,12 +1,29 @@
-# React + Vite
+# 🌟 QuoteHaven  
+*Where every mood finds its words* ✨  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuoteHaven is a React-based web app that helps you discover quotes tailored to your mood.  
+You can **explore, save, and share quotes** that match your emotions—whether you’re feeling motivated, calm, curious, or romantic.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🎭 Get quotes based on your **mood**  
+- 🌐 Fetch fresh quotes from a **Quote API**  
+- 💾 **Save your favorite quotes** using **Local Storage** (no login required)  
+- 📤 **Share** quotes with friends  
+- 🔎 Explore a wide range of inspiring thoughts  
+- ⚡ Quotes are available even after refreshing the page  
+- 🌐 Smooth **multi-page navigation** using **React Router DOM**  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS, Framer Motion  
+- **Routing:** React Router DOM  
+- **API:** Integrated **Quote API** for fetching quotes dynamically  
+- **State Management:** React Hooks / Context API  
+- **Storage:** Browser **Local Storage** for saving quotes  
+
+---
+
+
