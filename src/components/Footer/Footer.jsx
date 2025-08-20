@@ -48,7 +48,7 @@ function Footer() {
               <div className="mb-2 text-base sm:text-lg">
                 <ul className="space-y-2">
                   <li>
-                    <NavLink to="/Home" className="hover:text-orange-500">
+                    <NavLink to="" className="hover:text-orange-500">
                       Home
                     </NavLink>
                   </li>
