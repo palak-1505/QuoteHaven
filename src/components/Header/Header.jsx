@@ -9,6 +9,7 @@ function Header() {
       const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
       };
+
     return (
         <header className="sticky w-full top-0 shadow z-50">
           <nav className="bg-gray-100 border-gray-200 px-4 sm:px-6 lg:px-8 py-2.5">
@@ -21,9 +22,11 @@ function Header() {
                     alt="Logo"
                   />
                 </div>
+
                 <div className="text-sm sm:text-base lg:text-base mt-2">
                   Find quotes by mood — save, share, and carry them with you.
                 </div>
+
               </div>
               <button
                 onClick={toggleMenu}
@@ -34,9 +37,10 @@ function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}></path>
                 </svg>
               </button>
+
               <div
                 className={`w-full lg:flex lg:w-auto lg:order-1 ${isMenuOpen ? 'block' : 'hidden'} lg:block`}
-                id="mobile-menu-2"
+                
               >
                 <ul className="flex flex-col mt-4 text-base sm:text-lg lg:text-xl font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                   <li>
@@ -49,6 +53,7 @@ function Header() {
                       Home
                     </NavLink>
                   </li>
+
                   <li>
                     <NavLink
                       to="/Quotes"
@@ -59,6 +64,7 @@ function Header() {
                       Quotes
                     </NavLink>
                   </li>
+
                   <li>
                     <NavLink
                       to="/Garden"
@@ -69,6 +75,7 @@ function Header() {
                       Garden
                     </NavLink>
                   </li>
+
                   <li>
                     <NavLink
                       to="/Moods"
@@ -79,6 +86,7 @@ function Header() {
                       Moods
                     </NavLink>
                   </li>
+
                   <li>
                     <NavLink
                       to="/About"
@@ -89,6 +97,7 @@ function Header() {
                       About
                     </NavLink>
                   </li>
+                  
                 </ul>
               </div>
             </div>
