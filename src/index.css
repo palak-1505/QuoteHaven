@@ -21,3 +21,12 @@
 .animate-fadeInFast { animation: fadeInFast 0.5s ease-in; }
 .animate-fadeInSlow { animation: fadeInSlow 1.5s ease-in; }
 .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+
+ .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .button-hover:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s ease-in-out;
+    }
