@@ -1,22 +1,25 @@
  import React from "react";
 import { NavLink } from "react-router-dom";
 function QuoteCategories() {
-            const categories = [
+            const moods = [
                 "Motivation", "Success", "Leadership", "Life", "Happiness", "Love", "Wisdom",
                 "Philosophy", "Science", "Art", "Business"
             ];
+
+
 
             return (
                 <div className="flex flex-col items-center justify-center mt-8 w-full ">
                     <div className="flex flex-wrap gap-2 ">
                         {/* <span className="text-gray-700 font-medium mr-2">Popular:</span> */}
-                        {categories.map((category) => (
-                            <button
-                                key={category}
+                        {moods.map((mood) => (
+                            <NavLink to='/Quotes'
+                                key={mood}
                                 className="px-4 py-2 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300 transition duration-200"
+                                
                             >
-                                {category}
-                            </button>
+                                {mood}
+                            </NavLink>
                         ))}
                     </div>
                     <div className="flex gap-4 text-lg font-serif font-semibold mt-8">

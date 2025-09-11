@@ -24,7 +24,7 @@ function Header() {
                 </div>
 
                 <div className="text-sm sm:text-base lg:text-base mt-2">
-                  Find quotes by mood — save, share, and carry them with you.
+                  Quotes for every feeling — ready to save, share, and carry with you
                 </div>
 
               </div>
@@ -73,17 +73,6 @@ function Header() {
                       }
                     >
                       Garden
-                    </NavLink>
-                  </li>
-
-                  <li>
-                    <NavLink
-                      to="/Moods"
-                      className={({ isActive }) =>
-                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-500" : "text-gray-900"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                      }
-                    >
-                      Moods
                     </NavLink>
                   </li>
 

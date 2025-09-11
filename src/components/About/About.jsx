@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom';
 
 
 function About() {
+    
+  window.scrollTo({top : 0 , behavior : "smooth"})
     return (
          <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 bg-gray-100">
           <div className="text-left w-full max-w-4xl mx-auto flex flex-col justify-center items-start">
@@ -39,7 +41,7 @@ function About() {
               <div className="space-y-4">
                 <div>
                   <h1 className="text-lg sm:text-xl lg:text-xl font-semibold text-gray-800">
-                    • Mood-Based Quotes –{" "}
+                    • Quotes by Vibe –{" "}
                     <span className="text-gray-600 font-normal text-base sm:text-lg lg:text-lg">
                       Discover quotes tailored to your emotions — whether you are motivated, calm, curious, or romantic.
                     </span>

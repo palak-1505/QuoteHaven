@@ -9,6 +9,8 @@ import TrendyQuotes from './TrendyQuotes';
 
 
 function Home() {
+
+  window.scrollTo({top : 0 , behavior : "smooth"})
     return (
         
     <section className='bg-gray-100 h-full  text-gray-700'>

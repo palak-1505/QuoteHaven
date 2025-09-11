@@ -1,19 +1,30 @@
 
 
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function SearchBar() {
+    const [Input , setInput] = useState('');
+    const navigate = useNavigate();
 
-     
+    const handleSearch = (e) =>{
+        e.preventDefault();
+        navigate('/Quotes');
+        setInput('')
+    }
+
     return (
         <div className="flex justify-center items-center w-full max-w-xl mx-auto mt-8">
             <div className="relative w-full">
-                <input
+                <input onChange={(e) => setInput(e.target.value)}
+                   value={Input}
                     type="text"
                     placeholder="Search for quotes by keyword or author..."
                     className="w-full px-6 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-500 text-lg text-gray-700 placeholder-gray-500"
                 />
-                <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700">
+                <button onClick={handleSearch}
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700">
+                
                     <svg
                         className="w-6 h-6"
                         fill="none"

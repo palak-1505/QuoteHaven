@@ -8,7 +8,7 @@ import Home from './components/Home/Home.jsx'
 // import Moods from './components/Moods/Moods.jsx'
 import About from './components/About/About.jsx'
 import Quotes from './components/Quotes/Quotes.jsx'
-import Moods from './components/Moods/Moods.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -27,10 +27,7 @@ const router = createBrowserRouter([
       path:"about",
       element:<About/>
     },
-    {
-      path:"moods",
-      element:<Moods/>
-    }
+    
   ]
 }
 ])
