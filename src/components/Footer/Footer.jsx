@@ -53,18 +53,18 @@ function Footer() {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/About" className="hover:text-orange-500">
-                      About Us
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/Moods" className="hover:text-orange-500">
-                      Moods
+                    <NavLink to="/Quotes" className="hover:text-orange-500">
+                      Quotes
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="/Garden" className="hover:text-orange-500">
                       Garden
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/About" className="hover:text-orange-500">
+                      About us
                     </NavLink>
                   </li>
                 </ul>

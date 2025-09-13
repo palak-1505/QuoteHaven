@@ -2,29 +2,42 @@ import React from 'react'
 
 
 
-const QuoteCard = ({ quote, author }) => {
+const QuoteCard = ({ quote, author}) => {
+
+
       const handleSave = () => {
+
         const savedQuotes = JSON.parse(localStorage.getItem('savedQuotes')) || [];
+
         const newQuote = { quote, author };
+
         if (!savedQuotes.some(q => q.quote === quote && q.author === author)) {
+
           savedQuotes.push(newQuote);
+
           localStorage.setItem('savedQuotes', JSON.stringify(savedQuotes));
-          console.log('Quote saved:', newQuote);
+
+          alert('Quote saved:');
+
         } else {
-          console.log('Quote already saved:', newQuote);
+
+          alert('Quote already saved:');
+          
         }
       };
+      
 
       const shareUrl = window.location.href;
-      const encodedQuote = encodeURIComponent(quote);
+      
+      const encodedQuote = encodeURIComponent(`${quote} — ${author}`);
 
       return (
         <div 
           className="bg-white rounded-xl shadow-md p-6 m-4 min-h-[250px] flex flex-col justify-between card-hover"
         >
           <div>
-            <p className="text-gray-800 text-lg italic ">{quote}</p>
-            <p className="text-green-600 text-lg mb-6">- {author}</p>
+            <blockquote className="text-gray-800 text-xl italic ">{quote}</blockquote>
+            <p className="text-green-600 text-lg text-right mb-6">- {author}</p>
           </div>
           <div className="flex justify-between items-center">
             <button
