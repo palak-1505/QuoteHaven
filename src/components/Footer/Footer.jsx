@@ -6,9 +6,9 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/f
 
 function Footer() {
     return (
-       <footer className="bg-gray-400 border-y">
+       <footer className="bg-gray-400 border-y ">
           <div className="flex flex-col md:flex-row justify-between items-start max-w-full mx-auto px-4 sm:px-6 lg:px-24 my-8 sm:my-10 lg:my-12">
-            <div className="flex justify-start items-start flex-col text-gray-900 font-medium w-full md:w-1/3 mb-8 md:mb-0">
+            <div className="flex justify-start items-start flex-col   text-gray-900 font-medium w-full md:w-1/3 mb-8 md:mb-0">
               <div className="mb-2">
                 <img
                   src={logo}
@@ -18,7 +18,7 @@ function Footer() {
               </div>
               <div className="text-base sm:text-lg font-medium text-justify">
                 QuoteHaven is your personal library of inspiration.
-                Browse by mood, save what speaks to you, and share
+                Browse, save what speaks to you, and share
                 with friends in one click.
               </div>
               <div className="flex space-x-4 mt-4 sm:mt-4 md:mt-4">

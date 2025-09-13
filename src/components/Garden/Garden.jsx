@@ -17,10 +17,10 @@ function Garden() {
   window.scrollTo({top : 0 , behavior : "smooth"})
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-green-400 to-blue-500 flex flex-col items-center justify-center">
-      <h1 className="text-5xl font-serif font-bold text-white mb-6">Your Quote Garden</h1>
+    <div className="min-h-screen   bg-gray-50 flex flex-col items-center justify-center">
+      <h1 className="text-5xl font-serif font-bold text-gray-900 mb-6">Your Quote Garden</h1>
       {savedQuotes.length === 0 ? (
-        <p className="text-white text-xl">No quotes saved yet.</p>
+        <p className="text-gray-700 text-2xl font-serif">No quotes saved yet.</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {savedQuotes.map((quoteObj, index) => {
