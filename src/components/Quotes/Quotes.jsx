@@ -27,16 +27,20 @@ function Quotes() {
     setError(null);
     try {
       const response = await fetch("/api/quotes");
-      console.log('Response Status:', response.status); // Log status
+
+      // console.log('Response Status:', response.status); // Log status
+
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
+
       const data = await response.json();
-      console.log('Response Data:', data); // Log the full response
+
+      // console.log('Response Data:', data); // Log the full response
       setQuotes(prev => [...prev,...data]); // Fallback to data if results is undefined
     } catch (error) {
-      console.error('Fetch Error:', error.message);
-       setError(error.message);
+      // console.error('Fetch Error:', error.message);
+      setError(error.message);
     } finally {
       setIsLoading(false);
     }
