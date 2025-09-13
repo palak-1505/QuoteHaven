@@ -26,4 +26,7 @@ You can **explore, save, and share quotes** that match your emotions—whether y
 
 ---
 
+## Deploy Link
+-https://quote-haven-02.netlify.app/
+
 
